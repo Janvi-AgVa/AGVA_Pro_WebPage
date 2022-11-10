@@ -1,0 +1,191 @@
+/*navbar*/
+.NavBar{  
+  margin-top: 0%;
+  display: flex;
+  overflow: hidden;
+  
+}
+img{
+  margin-top: 5px;
+  padding: 0;
+  margin-left: 30px;
+  height: 50px;
+  width: 300px;
+}
+.NavBar ul{
+  padding: 0;
+  margin-right: 90px;
+  display: flex;
+  margin-left: 1000px;
+}
+.menu-btn i{
+  margin-left: 150px;
+  margin-top: 15px;
+  color: black;
+  font-size: 22px;
+  cursor: pointer;
+  display: none;
+}
+input[type="checkbox"]{
+  display: none;
+}
+.NavBar ul li{
+  float: left;
+  list-style-type: none;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.NavBar ul li a{
+  color:  #444444;
+  text-decoration: none;
+  font-family: 'Poppins';
+ 
+}
+.NavBar ul li a.active,.NavBar ul li a:hover{
+  color: #cb297b; 
+ 
+  
+  
+}
+.menu-btn i{
+  display: none;
+}
+
+/*main-page */
+.main-img{
+  height: auto;
+  width: 100%;
+}
+video{
+  height: auto;
+  width: 100%;
+}
+
+/*media query*/
+@media (max-width: 480px) {
+  img {
+    margin-left: 0%;
+    width: 250px;
+  }
+  .menu-btn i{
+    display: block;
+   
+  }
+ 
+ .NavBar ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    height: 100vh;
+    width: 50%;
+    display: block; 
+  
+  }
+  
+  .NavBar ul li{
+    width: 100%;
+    margin: 40px 0;
+    
+    
+  }
+  
+  .NavBar ul li a{
+    color: black;
+    width: 50%;
+    margin-left:-100%;
+    display: block;
+    font-size: 20px;
+    text-align: left;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a{
+    margin-left: 100px;
+    
+  }
+
+  .NavBar ul li a.active,
+  .NavBar ul li a:hover{
+    color: #cb297b;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  img{
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    width: 150px;
+  }
+  .NavBar ul{
+    margin-left: 10%;
+    
+  }
+  .NavBar ul li a{
+    color:  #444444;
+    text-decoration: none;
+    font-size:8px;
+    font-family: 'Poppins';
+    
+    
+  }
+  .NavBar ul li{
+    margin-right: 10px;
+    margin-bottom: 0%;
+    width:35px;
+  }
+  
+  .NavBar ul li a.active,
+  .NavBar ul li a:hover{
+    background: none;
+    color: #cb297b;
+   
+  }
+}
+  @media (min-width: 768px) and (max-width: 1024px){
+    img{
+      padding: 0;
+      margin: 0;
+      height: 50px;
+      width: 140px;
+    }
+    .NavBar ul{
+      margin-left: 25%;
+    }
+    .NavBar ul li a{
+      color:  #444444;
+      font-family: 'Poppins';
+    }
+    .NavBar ul li :hover{
+      color: #cb297b; 
+      border-bottom: 1px solid #cb297b;
+      
+    }
+    
+  }
+  @media (min-width: 1025px) and (max-width: 1280px){
+    .NavBar ul{
+      margin-left: 25%;
+    }
+    .NavBar ul li a{
+      color:  #444444;
+      font-family: 'Poppins';
+    }
+    .NavBar ul li :hover{
+      color: #cb297b; 
+      border-bottom: 1px solid #cb297b;
+      
+    }
+  }
+  @media (min-width: 1281px) {
+    .NavBar ul{
+      margin-left: 40%;
+    }
+    .NavBar ul li a{
+      font-family: 'Poppins';
+      color:  #444444;
+    }
+    .NavBar ul li :hover{
+      color: #cb297b; 
+      border-bottom: 1px solid #cb297b;
+      
+    }
+  }
